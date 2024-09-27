@@ -1,0 +1,15 @@
+{
+  "name": "20creating_server",
+  "version": "1.0.0",
+  "description": "My first Express.js app",
+  "main": "server.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Your Name",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.0"
+  }
+}
