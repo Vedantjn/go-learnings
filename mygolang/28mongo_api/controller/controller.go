@@ -143,3 +143,11 @@ func DeleteOneMovie(w http.ResponseWriter, r *http.Request) {
 	deleteOneMovie(params["id"])
 	json.NewEncoder(w).Encode(params["id"])
 }
+
+func DeleteAllMovies(w http.ResponseWriter, r *http.Request) {
+	w.Header().Set("Content-Type", "application/x-www-form-urlencoded")
+	w.Header().Set("Allow-Control-Allow-Methods", "DELETE")
+
+	count := deleteAllMovie()
+	json.NewEncoder(w).Encode(count)
+}
