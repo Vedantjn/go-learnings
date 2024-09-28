@@ -22,3 +22,4 @@ https://100go.co/
 - go mod edit -module ....
 - go mod vendor
 - go run -mod=vendor main.go
+- go run --race .
